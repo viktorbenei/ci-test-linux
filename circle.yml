@@ -1,7 +1,3 @@
-machine:
-  xcode:
-    version: "7.0"
-
 test:
   override:
     - bash ./install_bitrise_cli.sh
