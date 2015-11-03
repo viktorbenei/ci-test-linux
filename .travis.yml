@@ -1,0 +1,4 @@
+script:
+  - bash ./install_bitrise_cli.sh
+  - bitrise run primary
+  - ls
