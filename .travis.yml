@@ -1,3 +1,6 @@
+sudo: required
+dist: trusty
+
 script:
   - bash ./install_bitrise_cli.sh
   - bitrise run primary
