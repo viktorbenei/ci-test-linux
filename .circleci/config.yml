@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: apt install wget
-          command: apt update && apt install -y wget git
+          name: apt install
+          command: apt update && apt install -y wget git sudo
       - run:
           name: Install Bitrise CLI
           command: bash ./install_bitrise_cli.sh
