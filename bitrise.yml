@@ -1,27 +1,18 @@
 ---
-format_version: 1.0.0
+format_version: 5
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
-  envs:
-  - BITRISE_PROJECT_PATH: "./BitriseXcode7Sample.xcodeproj"
-  - BITRISE_SCHEME: BitriseXcode7Sample
-
-trigger_map:
-- pattern: "*"
-  is_pull_request_allowed: true
-  workflow: primary
+  envs: []
 
 workflows:
   primary:
     steps:
     - script:
-        title: Quick tests
         inputs:
         - content: |-
-            #!/bin/bash
-            set -e
-            set -v
+            #!/usr/bin/env bash
+            set -ex
 
             # -----------------------
             # ---------- ENV
