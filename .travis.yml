@@ -2,6 +2,6 @@ sudo: required
 dist: trusty
 
 script:
-  - sudo bash ./install_bitrise_cli.sh
+  - bash ./install_bitrise_cli.sh
   - bitrise run primary
   - ls
