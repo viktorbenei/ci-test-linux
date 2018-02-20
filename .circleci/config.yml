@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: apt install wget
-          command: apt update && apt install -y wget
+          command: apt update && apt install -y wget git
       - run:
           name: Install Bitrise CLI
           command: bash ./install_bitrise_cli.sh
