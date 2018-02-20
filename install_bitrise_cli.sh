@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
-curl -fL https://github.com/bitrise-io/bitrise/releases/download/1.13.0/bitrise-$(uname -s)-$(uname -m) > /usr/local/bin/bitrise
-chmod +x /usr/local/bin/bitrise
+bitrise_cli_ver="1.13.0"
+
+sudo wget "https://github.com/bitrise-io/bitrise/releases/download/${bitrise_cli_ver}/bitrise-$(uname -s)-$(uname -m)" -O /usr/local/bin/bitrise
+sudo chmod +x /usr/local/bin/bitrise
 bitrise setup
