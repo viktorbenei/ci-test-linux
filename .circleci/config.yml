@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: apt install wget
+          command: apt install -y wget
+      - run:
           name: Install Bitrise CLI
           command: bash ./install_bitrise_cli.sh
       - run:
