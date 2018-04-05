@@ -22,6 +22,7 @@ workflows:
             # -----------------------
             # ---------- SUPER_SECRET
             echo "SUPER_SECRET: $SUPER_SECRET"
+            echo "SUPER_SHORT_SECRET: $SUPER_SHORT_SECRET"
 
             # -----------------------
             # ---------- free -m
